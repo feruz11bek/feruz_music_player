@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PlayerActivity"
+    android:orientation="vertical"
+    android:background="#29C3FF"
+    >
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_margin="50dp"
+        android:layout_width="300dp"
+        android:layout_height="270dp"
+        app:srcCompat="@drawable/image" />
+
+    <TextView
+        android:id="@+id/songname"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/imageView"
+        android:layout_marginHorizontal="35dp"
+        android:fontFamily="@font/merienda_bold"
+        android:gravity="center"
+        android:text="Song name"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_below="@id/songname"
+        android:layout_marginVertical="26dp"
+        android:gravity="center_horizontal"
+        android:layout_marginHorizontal="50dp"/>
+
+    <Button
+        android:id="@+id/orqaga"
+        android:layout_below="@id/seekBar"
+        android:layout_width="60sp"
+        android:layout_height="50dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/previous"
+        android:layout_toStartOf="@id/play"
+        android:layout_toLeftOf="@id/play" />
+
+    <Button
+        android:id="@+id/play"
+        android:layout_width="60sp"
+        android:layout_height="50dp"
+        android:layout_below="@id/seekBar"
+        android:background="@drawable/play"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/oldinga"
+        android:layout_width="60sp"
+        android:layout_height="50dp"
+        android:layout_below="@id/seekBar"
+        android:layout_toEndOf="@id/play"
+        android:layout_toRightOf="@id/play"
+        android:layout_marginLeft="30sp"
+        android:background="@drawable/next"/>
+
+    <TextView
+        android:id="@+id/Txt"
+        android:layout_width="match_parent"
+        android:layout_height="24dp"
+        android:layout_centerVertical="true"
+        android:layout_marginVertical="17dp"
+        android:fontFamily="@font/nova_mono"
+        android:gravity="center"
+        android:text="F e r u z    Music Player"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="#000000"
+        />
+
+
+</RelativeLayout>

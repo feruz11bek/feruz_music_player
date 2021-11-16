@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/aladin</item>
+        <item>@font/bangers</item>
+        <item>@font/faster_one</item>
+        <item>@font/merienda_bold</item>
+        <item>@font/nova_mono</item>
+        <item>@font/righteous</item>
+        <item>@font/trade_winds</item>
+    </array>
+</resources>
